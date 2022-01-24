@@ -19,6 +19,10 @@
 		92DFAB05279F5C7F00954457 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DFAB03279F5C7F00954457 /* Persistence.swift */; };
 		92DFAB07279F5D4F00954457 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DFAB06279F5D4F00954457 /* TaskListViewModel.swift */; };
 		92DFAB08279F5D4F00954457 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DFAB06279F5D4F00954457 /* TaskListViewModel.swift */; };
+		92DFAB0B279F5E2800954457 /* AddListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DFAB0A279F5E2800954457 /* AddListView.swift */; };
+		92DFAB0C279F5E2800954457 /* AddListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DFAB0A279F5E2800954457 /* AddListView.swift */; };
+		92DFAB0E279F5E6C00954457 /* TaskListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DFAB0D279F5E6C00954457 /* TaskListCell.swift */; };
+		92DFAB0F279F5E6C00954457 /* TaskListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DFAB0D279F5E6C00954457 /* TaskListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,8 @@
 		92DFAB00279F5C2B00954457 /* CDCRUDMVVM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CDCRUDMVVM.xcdatamodel; sourceTree = "<group>"; };
 		92DFAB03279F5C7F00954457 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		92DFAB06279F5D4F00954457 /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
+		92DFAB0A279F5E2800954457 /* AddListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListView.swift; sourceTree = "<group>"; };
+		92DFAB0D279F5E6C00954457 /* TaskListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +69,11 @@
 		92DFAAE0279F5C0600954457 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				92DFAB10279F5F5D00954457 /* Model */,
 				92DFAAE1279F5C0600954457 /* CDCRUDMVVMApp.swift */,
-				92DFAAE2279F5C0600954457 /* ContentView.swift */,
+				92DFAB09279F5E1800954457 /* Views */,
+				92DFAB11279F5F7F00954457 /* ViewModel */,
 				92DFAAE3279F5C0700954457 /* Assets.xcassets */,
-				92DFAAFF279F5C2B00954457 /* CDCRUDMVVM.xcdatamodeld */,
-				92DFAB03279F5C7F00954457 /* Persistence.swift */,
-				92DFAB06279F5D4F00954457 /* TaskListViewModel.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -88,6 +93,33 @@
 				92DFAAF0279F5C0700954457 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		92DFAB09279F5E1800954457 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				92DFAAE2279F5C0600954457 /* ContentView.swift */,
+				92DFAB0A279F5E2800954457 /* AddListView.swift */,
+				92DFAB0D279F5E6C00954457 /* TaskListCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		92DFAB10279F5F5D00954457 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				92DFAB03279F5C7F00954457 /* Persistence.swift */,
+				92DFAAFF279F5C2B00954457 /* CDCRUDMVVM.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		92DFAB11279F5F7F00954457 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				92DFAB06279F5D4F00954457 /* TaskListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,8 +220,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92DFAB0E279F5E6C00954457 /* TaskListCell.swift in Sources */,
 				92DFAAF3279F5C0700954457 /* ContentView.swift in Sources */,
 				92DFAB04279F5C7F00954457 /* Persistence.swift in Sources */,
+				92DFAB0B279F5E2800954457 /* AddListView.swift in Sources */,
 				92DFAB07279F5D4F00954457 /* TaskListViewModel.swift in Sources */,
 				92DFAB01279F5C2B00954457 /* CDCRUDMVVM.xcdatamodeld in Sources */,
 				92DFAAF1279F5C0700954457 /* CDCRUDMVVMApp.swift in Sources */,
@@ -200,8 +234,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92DFAB0F279F5E6C00954457 /* TaskListCell.swift in Sources */,
 				92DFAAF4279F5C0700954457 /* ContentView.swift in Sources */,
 				92DFAB05279F5C7F00954457 /* Persistence.swift in Sources */,
+				92DFAB0C279F5E2800954457 /* AddListView.swift in Sources */,
 				92DFAB08279F5D4F00954457 /* TaskListViewModel.swift in Sources */,
 				92DFAB02279F5C2B00954457 /* CDCRUDMVVM.xcdatamodeld in Sources */,
 				92DFAAF2279F5C0700954457 /* CDCRUDMVVMApp.swift in Sources */,

@@ -8,13 +8,12 @@
 import Foundation
 import CoreData
 
-struct PersistenceController{
+struct PersistenceController {
     static let shared = PersistenceController()
-    
     let container:NSPersistentContainer
-    init(inMemory: Bool = false){
+    init(inMemory: Bool = false) {
         container = NSPersistentContainer(name: "CDCRUDMVVM")
-        if inMemory{
+        if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
         }
         container.viewContext.automaticallyMergesChangesFromParent = true
