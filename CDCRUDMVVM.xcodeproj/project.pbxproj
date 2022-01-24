@@ -13,6 +13,10 @@
 		92DFAAF4279F5C0700954457 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DFAAE2279F5C0600954457 /* ContentView.swift */; };
 		92DFAAF5279F5C0700954457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92DFAAE3279F5C0700954457 /* Assets.xcassets */; };
 		92DFAAF6279F5C0700954457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92DFAAE3279F5C0700954457 /* Assets.xcassets */; };
+		92DFAB01279F5C2B00954457 /* CDCRUDMVVM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92DFAAFF279F5C2B00954457 /* CDCRUDMVVM.xcdatamodeld */; };
+		92DFAB02279F5C2B00954457 /* CDCRUDMVVM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92DFAAFF279F5C2B00954457 /* CDCRUDMVVM.xcdatamodeld */; };
+		92DFAB04279F5C7F00954457 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DFAB03279F5C7F00954457 /* Persistence.swift */; };
+		92DFAB05279F5C7F00954457 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DFAB03279F5C7F00954457 /* Persistence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,8 @@
 		92DFAAE8279F5C0700954457 /* CDCRUDMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDCRUDMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92DFAAEE279F5C0700954457 /* CDCRUDMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDCRUDMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92DFAAF0279F5C0700954457 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		92DFAB00279F5C2B00954457 /* CDCRUDMVVM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CDCRUDMVVM.xcdatamodel; sourceTree = "<group>"; };
+		92DFAB03279F5C7F00954457 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,8 @@
 				92DFAAE1279F5C0600954457 /* CDCRUDMVVMApp.swift */,
 				92DFAAE2279F5C0600954457 /* ContentView.swift */,
 				92DFAAE3279F5C0700954457 /* Assets.xcassets */,
+				92DFAAFF279F5C2B00954457 /* CDCRUDMVVM.xcdatamodeld */,
+				92DFAB03279F5C7F00954457 /* Persistence.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -177,6 +185,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				92DFAAF3279F5C0700954457 /* ContentView.swift in Sources */,
+				92DFAB04279F5C7F00954457 /* Persistence.swift in Sources */,
+				92DFAB01279F5C2B00954457 /* CDCRUDMVVM.xcdatamodeld in Sources */,
 				92DFAAF1279F5C0700954457 /* CDCRUDMVVMApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,6 +196,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				92DFAAF4279F5C0700954457 /* ContentView.swift in Sources */,
+				92DFAB05279F5C7F00954457 /* Persistence.swift in Sources */,
+				92DFAB02279F5C2B00954457 /* CDCRUDMVVM.xcdatamodeld in Sources */,
 				92DFAAF2279F5C0700954457 /* CDCRUDMVVMApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,6 +464,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		92DFAAFF279F5C2B00954457 /* CDCRUDMVVM.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				92DFAB00279F5C2B00954457 /* CDCRUDMVVM.xcdatamodel */,
+			);
+			currentVersion = 92DFAB00279F5C2B00954457 /* CDCRUDMVVM.xcdatamodel */;
+			path = CDCRUDMVVM.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 92DFAADC279F5C0600954457 /* Project object */;
 }
