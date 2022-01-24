@@ -31,9 +31,7 @@ struct AddListView: View {
                                 .frame(minWidth: 0, maxWidth: .infinity)
                         }
                     })
-                        .tint(.yellow)
                         .buttonStyle(.bordered)
-                        .buttonBorderShape(.roundedRectangle)
                 }
             }
             .navigationTitle(taskListVM.taskListItem == nil ? "Add Item" : "Edit")
